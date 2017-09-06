@@ -26,11 +26,11 @@ UIView 的层级关系
     [self.view sendSubviewToBack:view03];<br/>
     
     //self.view.subviews 是父iew 管理所有子试图的数组 每次添加一个视图的时候 都会放入这个数组<br/>
-    UIView* fontView=self.view.subviews[2];//最前面的视图 是最后一个添加的<br/><br/><br/><br/><br/><br/>
-    UIView* backView=self.view.subviews[0];//最后面的视图 是第一个添加的<br/><br/><br/><br/><br/>
+    UIView* fontView=self.view.subviews[2];//最前面的视图 是最后一个添加的<br/>
+    UIView* backView=self.view.subviews[0];//最后面的视图 是第一个添加的<br/>
     
-    //每一个view 都有一个superview 都有一个父view<br/><br/><br/><br/>
-    UIView* superView=self.view.subviews;<br/><br/><br/>
-    //从父视图中 移除自己<br/><br/>
+    //每一个view 都有一个superview 都有一个父view<br/>
+    UIView* superView=self.view.subviews;<br/>
+    //从父视图中 移除自己<br/>
     [view01 removeFromSuperview];<br/>
 }
